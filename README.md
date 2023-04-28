@@ -22,7 +22,13 @@ Instale com npm
   npm install
 ```
 
-Em seguiguida execute o comando
+Em seguida utilize o comando abaixo para gerar o banco de dados
+
+```bash
+  npm run migrate
+```
+
+E então execute o comando para executar a api em sua maquina local
 
 ```bash
   npm run dev

@@ -61,7 +61,14 @@ class AdminDishesController {
         .map((ingredients) => ingredients.trim());
 
       dishes = await knex("ingredients")
-        .select(["dishes.id", "dishes.name", "dishes.user_id"])
+        .select([
+          "dishes.id",
+          "dishes.name",
+          "dishes.user_id",
+          "dishes.description",
+          "dishes.price",
+          "dishes.category",
+        ])
         .where("dishes.user_id", user_id)
         .whereLike("dishes.name", `%${name}%`)
         .whereIn("ingredients.name", filterIngredients)

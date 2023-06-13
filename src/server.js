@@ -1,5 +1,5 @@
 require("express-async-errors");
-const cors = require("cors");
+
 const sqliteConnection = require("./database/sqlite");
 const AppError = require("./utils/AppError");
 

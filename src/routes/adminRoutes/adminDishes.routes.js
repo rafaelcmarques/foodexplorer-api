@@ -17,6 +17,7 @@ adminDishesRoutes.use(ensureAuthenticated);
 adminDishesRoutes.post("/", adminDishesController.create);
 adminDishesRoutes.get("/", adminDishesController.index);
 adminDishesRoutes.get("/:id", adminDishesController.show);
+adminDishesRoutes.patch("/:id", adminDishesController.update);
 adminDishesRoutes.delete("/:id", adminDishesController.delete);
 adminDishesRoutes.patch(
   "/image/:id",

@@ -95,6 +95,37 @@ class AdminDishesController {
 
     return response.json(dishesWithIngredients);
   }
+
+  async update(request, response) {
+    const { name, category, ingredients, price, description } = request.body;
+    const user_id = request.user.id;
+    const { id } = request.params;
+
+    const dishe = await knex("dishes").where({ id }).first();
+    if (!dishe) {
+      throw new AppError("Prato não encontrado!");
+    }
+
+    await knex("dishes").where({ id }).update({
+      name,
+      category,
+      price,
+      description,
+    });
+
+    await knex("ingredients").where({ dishe_id: id }).del(); // Exclui todos os ingredientes relacionados ao prato
+
+    const ingredientsInsert = ingredients.map((ingredient) => {
+      return {
+        user_id,
+        dishe_id: id,
+        name: ingredient.name, // Supondo que a coluna de nome seja 'name'
+      };
+    });
+
+    await knex("ingredients").insert(ingredientsInsert);
+    return response.status(201).json();
+  }
 }
 
 module.exports = AdminDishesController;

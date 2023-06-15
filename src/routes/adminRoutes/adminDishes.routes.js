@@ -20,7 +20,7 @@ adminDishesRoutes.get("/:id", adminDishesController.show);
 adminDishesRoutes.patch("/:id", adminDishesController.update);
 adminDishesRoutes.delete("/:id", adminDishesController.delete);
 adminDishesRoutes.patch(
-  "/image/:id",
+  "/:id/image",
   upload.single("image"),
   adminDishesImageController.update
 );

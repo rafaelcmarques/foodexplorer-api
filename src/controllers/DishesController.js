@@ -23,7 +23,15 @@ class DishesController {
         .map((ingredients) => ingredients.trim());
 
       dishes = await knex("ingredients")
-        .select(["dishes.id", "dishes.name", "dishes.user_id"])
+        .select([
+          "dishes.id",
+          "dishes.name",
+          "dishes.user_id",
+          "dishes.category",
+          "dishes.price",
+          "dishes.description",
+          "dishes.image",
+        ])
         .whereLike("dishes.name", `%${name}%`)
         .whereIn("ingredients.name", filterIngredients)
         .innerJoin("dishes", "dishes.id", "ingredients.dishe_id");

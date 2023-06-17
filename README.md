@@ -12,7 +12,11 @@
 
 **Para acessar o deploy e testar todas as funcionalidades, basta clicar no link abaixo:**
 
-- [Em construção 🚧]()
+- [FoodExplorer - Deploy ](https://foodexplorer-rafaelmarques.netlify.app/)
+
+- Para acessar a conta de administrador, utilize o email: admin@email.com senha: 1234
+- Para acessar a conta de usuário, basta clicar em Criar Conta > Preencher as informações > Clicar em cadastrar
+- Após realizar os passos acima, utilize da conta cadastrada para entrar como usuário.
 
 ## ▶️ Instalação e execução
 
@@ -22,7 +26,7 @@ Instale com npm
   npm install
 ```
 
-Em seguida utilize o comando abaixo para gerar o banco de dados
+Em seguida utilize o comando abaixo para gerar as tabelas do banco de dados, caso ainda não existir.
 
 ```bash
   npm run migrate
@@ -50,9 +54,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## ⚙️ Repositório de código Front-end
 
-**Para acessar o repositório de código Front-end, clique no link abaixo.**
+**Para acessar o repositório de código back-end, clique no link abaixo.**
 
-- [Em contrução 🚧 ]()
+- [FoodExplorer - Front-end]()
 
 ## 💻 Projeto
 

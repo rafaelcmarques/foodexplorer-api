@@ -3,7 +3,7 @@
 - [🔧 Deploy](#-deploy)
 - [▶️ Instalação e Execução](#%EF%B8%8F-instalação-e-execução)
 - [🚀 Tecnologias](#-tecnologias)
-- [⚙️ Repositório de código Front-end](##%EF%B8%8F-repositório-de-código-front-end)
+- [⚙️ Repositório de código Front-end](#%EF%B8%8F-repositório-de-código-front-end)
 - [💻 Projeto](#-projeto)
 
 <br>

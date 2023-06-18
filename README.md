@@ -1,9 +1,9 @@
 <h1 align="center"> FoodExplorer - Back-end  </h1>
 
 - [🔧 Deploy](#-deploy)
-- [▶️ Instalação e Execução](#-instalação-e-execução)
+- [▶️ Instalação e Execução](#%EF%B8%8F-instalação-e-execução)
 - [🚀 Tecnologias](#-tecnologias)
-- [⚙️ Repositório de código Front-end](#-repositório-de-código-back-end)
+- [⚙️ Repositório de código Front-end](##%EF%B8%8F-repositório-de-código-front-end)
 - [💻 Projeto](#-projeto)
 
 <br>

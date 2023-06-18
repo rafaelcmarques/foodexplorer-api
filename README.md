@@ -56,7 +56,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 **Para acessar o repositório de código back-end, clique no link abaixo.**
 
-- [FoodExplorer - Front-end]()
+- [FoodExplorer - Front-end](https://github.com/rafaelcmarques/foodexplorer)
 
 ## 💻 Projeto
 
